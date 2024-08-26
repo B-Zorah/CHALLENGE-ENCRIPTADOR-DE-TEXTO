@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="LIMPIACACHE.css">
+    <link rel="stylesheet" href="STYLES.css">
+</head>
+
+<body>
+    <header>
+        <img src="./Logo.png" alt="Logo alura">
+        <section class="Logo"> </section>
+    </header>
+    <main class="encriptacion">
+        <section class="seccion-inicial">
+            <div class="texto-a-encriptar">
+                <textarea class="textarea-usuario" id="textarea-usuario" placeholder="INGRESA EL TEXTO AQUI" rows="10"
+                    cols=""></textarea>
+            </div>
+            <div class="acciones-usuario">
+                <div class="sugerencia-limpiar">
+                    <div class="sugerencia">
+                        <img src="./Vector.png" alt="imagen-sugerencia" class="imagen-sugerencia">
+                        <p class="sugerencia-usuario">IMPORTANTE: Sólo minúsculas y sin acentos. ^^</p>
+                    </div>
+                    <div class="limpiar">
+                        <button class="boton-limpiar" onclick="limpiar()">🗑️</button>
+                    </div>
+                </div>
+                <div class="botones">
+                    <button class="boton-encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="boton-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section class="seccion-resultado">
+            <img src="talisentada.gif" alt="talisentada" class="muñeco" id="muñeco">
+            <div class="area-texto-encriptado" id="area-texto-encriptado" style="display: none;">
+                <p class="texto-encriptado" id="texto-encriptado"></p>
+            </div>
+            <div class="no-texto" id="no-texto">
+                <div class="alertas-resultado" id="alertas-resultado">
+                    <p class="alerta">Ningún mensaje fue encontrado</p>
+                    <p class="indicacion">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <div class="botones-seccion2" id="botones-seccion2" style="display: none;">
+                <button class="boton-copiar" onclick="botonCopiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Diseñado y desarrollado po B'Zorah-Ignacio Berrospe</p>
+    </footer>
+    <script src="SCRIPT.js"></script>
+</body>
+
+</html>
